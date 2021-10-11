@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <meta charset="UTF-8" />
+        <title>Austin | Artist, Programmer, Game developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="typewriter.js"></script>
+        <link rel="icon" href="img/Ghost.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("a").on("click", function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+                        $("html, body").animate(
+                            {
+                                scrollTop: $(hash).offset().top,
+                            },
+                            800,
+                            function () {
+                                window.location.hash = hash;
+                            }
+                        );
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body onload="inst1(); inst2();">
+        <nav>
+            <img src="img/Ghost.png" />
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+
+        <header>
+            <section class="landing-page-wrapper">
+                <img src="img/Loading.gif" class="landing-page-loading" />
+                <p class="landing-page-text">Ready Player One?</p>
+            </section>
+        </header>
+
+        <main>
+            <section class="intro-wrapper" id="home">
+                <div data-aos="fade-right" data-aos-easing="ease-out">
+                    <p>Heyo! Nice to meet you!</p>
+                    <p>Some call me <span id="name" style="color: #F2FF49"></span>|</p>
+                    <p>I do <span id="do" style="color: #645DD7"></span>|</p>
+                    <br />
+                    <a href="https://www.instagram.com/aquiladoesart/" target="blank" class="fa fa-instagram"></a>
+                    <a href="https://itch.io/" target="blank" class="fa fa-cube"></a>
+                    <a href="https://twitter.com/AquilaDoesArt" target="blank" class="fa fa-twitter"></a>
+                    <a href="mailto:aquilainq@gmail.com" target="blank" class="fa fa-envelope"></a>
+                </div>
+                <img src="img/Doge.png"  data-aos="fade-left" data-aos-easing="ease-out" data-aos-delay="200">
+            </section>
+
+            <section class="about-wrapper" id="about">
+                <div data-aos="fade-right" data-aos-easing="ease-out">
+                    <h1>Who am I?</h1>
+                    <h2>
+                        Hello! I 'm your friendly neighbourhood programmer and artist! You can call me Austin or Aquila, whatever is up to your liking. I started
+                        my journey a few years ago and I 'm still working hard to improve. I like to think of myself as a jack-of-all-trades, I like it when the people I work with are commited, take things seriously and most importantly consistently on time!
+                        Feel free to contact me if you need anything, I will probably respond within 1 to 14 days
+                    </h2>
+                </div>
+                
+                <div data-aos="fade-left" data-aos-easing="ease-out">
+                    <h1>What I do</h1>
+                    <h2>I have my toes dipped in both the technical and creative aspects of the industries, the perfect fit for an indie developer if I would say so myself •̀.̫ •́✧</h2>
+                </div>
+                
+                <div class="about-container" data-aos="fade-right" data-aos-easing="ease-out">
+                    <div class="about-column">
+                        <img class="about-icon" src="img/DrawIcon.png" />
+                        <h1>Artist</h1>
+                        <p>I enjoy making pixel art, drawing illustrations and vector art</p>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Aseprite</li>
+                            <li>Krita</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="about-column">
+                        <img class="about-icon" src="img/CodeIcon.png" />
+                        <h1>Programmer</h1>
+                        <p>I like the dopamine rush of finishing a project</p>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="about-column">
+                        <img class="about-icon" src="img/GameDevIcon.png" />
+                        <h1>Game developer</h1>
+                        <p>I love coming up with concepts and designing playable demos</p>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Unity</li>
+                            <li>Aseprite</li>
+                            <li>Visual studio</li>
+                            <li>A lot of documentation reading</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-gallery-wrapper" id="projects" data-aos="fade-left" data-aos-easing="ease-out">
+                <h1>Projects</h1>
+                <h2>Here are some projects I 've worked on these past few years</h2>
+                <div class="projects-gallery-container">
+                    <img src="img/WatchMyNucleusThumbnail.png" class="projects-gallery-thumbnail" />
+                    <div class="projects-gallery-overlay">
+                        <p class="projects-gallery-description">
+                            I worked as the programmer and artist together with some teammates for a Ludum Dare 49 Game Jam submission - Watch my Nucleus
+                        </p>
+                        <center>
+                            <a href="https://aquilart.itch.io/watch-my-nucleus" target="blank" class="projects-gallery-visit">View our submission &rarr;</a>
+                        </center>
+                    </div>
+                </div>
+                <div class="projects-gallery-container">
+                    <img src="img/InstagramThumbnail.png" class="projects-gallery-thumbnail" />
+                    <div class="projects-gallery-overlay">
+                        <p class="projects-gallery-description">
+                            I 've been growing a small Instagram art blog since June 2021, growth is still slow but I'll keep trying &#129310;
+                        </p>
+                        <center>
+                            <a href="https://www.instagram.com/aquiladoesart/" target="blank" class="projects-gallery-visit"
+                                >Visit my page & show some love &rarr;</a
+                            >
+                        </center>
+                    </div>
+                </div>
+                <div class="projects-gallery-container">
+                    <img src="img/AstarThumbnail.png" class="projects-gallery-thumbnail" />
+                    <div class="projects-gallery-overlay">
+                        <p class="projects-gallery-description">
+                            I 've also worked on various other projects like an Astar pathfinding algorithm using P5.js and a discord bot using Python.
+                            Unfortunately, a web server has to be hosted for the demo to run so I can't link it here
+                        </p>
+                    </div>
+                </div>
+                <div class="projects-gallery-container">
+                    <img src="img/WebsiteThumbnail.png" class="projects-gallery-thumbnail" />
+                    <div class="projects-gallery-overlay">
+                        <p class="projects-gallery-description">
+                            This website! All of the animation, design, code and art for this website is made by me! Also I 've worked on another HTML project
+                            for school as well, unfortunately it reveals my personal info so I will not be linking it here, maybe next time?
+                        </p>
+                    </div>
+                </div>
+                <div class="projects-gallery-container">
+                    <img src="img/ZhuYueThumbnail.png" class="projects-gallery-thumbnail" />
+                    <div class="projects-gallery-overlay">
+                        <p class="projects-gallery-description">
+                            A short browser demo where you casually plant and harvest bamboo, feel the roaring winter winds and explore the endless world for
+                            relics
+                        </p>
+                        <center>
+                            <a href="https://hosef.itch.io/zhu-yue" target="blank" class="projects-gallery-visit">Check out 竹月 &rarr;</a>
+                        </center>
+                    </div>
+                </div>
+                <div class="projects-gallery-container">
+                    <img src="img/MaskDemoThumbnail.png" class="projects-gallery-thumbnail" />
+                    <div class="projects-gallery-overlay">
+                        <p class="projects-gallery-description">Another browser demo where you try to get to the top of the level angry birds style!</p>
+                        <center>
+                            <a href="https://hosef.itch.io/mask" target="blank" class="projects-gallery-visit">Check out Mask demo &rarr;</a>
+                        </center>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact" data-aos="fade" data-aos-easing="ease-in">
+                <div class="contact-flex">
+                    <div class="contact-column"><h1>Contact me</h1></div>
+                    <div class="contact-column">Have a cool idea or a proposal that you want to share? Or if you want a commision done, either way message me through Instagram or below</div>
+                    <div class="contact-column"><button type="button" class="contact-me">Message me &darr;</button></div>
+                </div>  
+                <div class="content">
+                    <form action="mailto:aquilainq@gmail.com" method="post" enctype="text/plain" style="margin: 5%;">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="firstname" placeholder="Your name.." />
+
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+                        <input type="submit" value="Send" />
+                        <input type="submit" value="Reset" />
+                    </form>
+                </div>
+                
+                <script>
+                var coll = document.getElementsByClassName("contact-me");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = document.getElementsByClassName("content")[0];
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+                }
+                </script>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
