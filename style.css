@@ -92,6 +92,12 @@ nav a.active,nav a:hover {
     }
 }
 
+@media only screen and (max-width:640px) {
+    .hideOnSmall {
+        display: none
+    }
+}
+
 .landing-page-wrapper {
     background-image: linear-gradient(#000,#131313);
     height: 100vh;
@@ -227,14 +233,14 @@ nav a.active,nav a:hover {
     width: auto
 }
 
-.about-wrapper h1,.projects-gallery-wrapper h1 {
+.about-wrapper h1,.projects-gallery-wrapper h1,.gallery-wrapper h1 {
     padding-top: 40px;
     text-align: center;
     color: #fff;
     font-family: pixelFont
 }
 
-.about-wrapper h2,.projects-gallery-wrapper h2 {
+.about-wrapper h2,.projects-gallery-wrapper h2,.gallery-wrapper h2 {
     padding-top: 20px;
     text-align: center;
     color: #fff;
@@ -455,4 +461,71 @@ input[type=submit]:hover {
 
 .side-nav .fa:hover {
     opacity: 1;
+}
+
+.main-gallery {
+    margin-top: 5%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-cell{
+    width: 60%;
+    opacity: 0.7;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+            transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.gallery-cell img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.gallery-cell.is-selected {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: none;
+            filter: none;
+}
+
+/*
+.gallery-description {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 5% 10%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: euroStyle;
+    font-size: 150%
+}
+
+.gallery-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.gallery-overlay:hover {
+    opacity: 1;
+}
+*/
+@media only screen and (max-width:800px) {
+    .main-gallery {
+        width: 80%;
+    }
 }

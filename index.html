@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="flickity.css" media="screen">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <meta charset="UTF-8" />
@@ -41,10 +42,12 @@
         </div>
         -->
         <nav>
-            <img src="img/Ghost.png" />
+            <img class="hideOnSmall" src="img/Ghost.png"/>
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <!--<a class="hideOnSmall" href="#projects">Projects</a>-->
+            <a class="hideOnSmall" href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </nav>
 
         <header>
@@ -74,53 +77,33 @@
                     <h1>Who am I?</h1>
                     <h2>
                         Hello! I 'm your friendly neighbourhood programmer and artist! You can call me Austin or Aquila, whatever is up to your liking. I started
-                        my journey a few years ago and I 'm still working hard to improve. I like to think of myself as a jack-of-all-trades, I like it when the people I work with are commited, take things seriously and most importantly consistently on time!
+                        my journey a few years ago and I 'm still working hard to improve. I like to think of myself as a jack-of-all-trades.
                         Feel free to contact me if you need anything, I will probably respond within 1 to 14 days
                     </h2>
                 </div>
-                
-                <div data-aos="fade-left" data-aos-easing="ease-out">
-                    <h1>What I do</h1>
-                    <h2>I have my toes dipped in both the technical and creative aspects of the industries, the perfect fit for an indie developer if I would say so myself •̀.̫ •́✧</h2>
-                </div>
-                
-                <div class="about-container" data-aos="fade-right" data-aos-easing="ease-out">
-                    <div class="about-column">
-                        <img class="about-icon" src="img/DrawIcon.png" />
-                        <h1>Artist</h1>
-                        <p>I enjoy making pixel art, drawing illustrations and vector art</p>
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Aseprite</li>
-                            <li>Krita</li>
-                            <li>Adobe Illustrator</li>
-                        </ul>
+            </section>
+
+            <section class="gallery-wrapper" id="gallery" data-aos="fade-right" data-aos-easing="ease-out">
+                <h1>Some of my art</h1>
+                <h2>Some of my personal picks! Most of them are my latest Instagram posts XD</h2>
+                <div class="main-gallery js-flickity"data-flickity-options='{ "cellAlign": "center", "contain": false' data-flickity='{ "autoPlay": 2500, "wrapAround": true, "draggable": false, "prevNextButtons":false, "pauseAutoPlayOnHover":false}'>
+                    <div class="gallery-cell" onclick="">
+                        <img src="img/Gallery/Colleseum.png"/>
                     </div>
-                    <div class="about-column">
-                        <img class="about-icon" src="img/CodeIcon.png" />
-                        <h1>Programmer</h1>
-                        <p>I like the dopamine rush of finishing a project</p>
-                        <h3>Languages</h3>
-                        <ul>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
+                    <div class="gallery-cell" onclick="">
+                        <img src="img/Gallery/ChristTheRedeemer.png"/>
                     </div>
-                    <div class="about-column">
-                        <img class="about-icon" src="img/GameDevIcon.png" />
-                        <h1>Game developer</h1>
-                        <p>I love coming up with concepts and designing playable demos</p>
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Unity</li>
-                            <li>Aseprite</li>
-                            <li>Visual studio</li>
-                            <li>A lot of documentation reading</li>
-                        </ul>
+                    <div class="gallery-cell" onclick="">
+                        <img src="img/Gallery/HogWarts.png"/>
+                    </div>
+                    <div class="gallery-cell" onclick="">
+                        <img src="img/Gallery/LadyLibertyPasr.png"/>
+                    </div>
+                    <div class="gallery-cell" onclick="">
+                        <img src="img/Gallery/Taj Mahal.png"/>
+                    </div>
+                    <div class="gallery-cell" onclick="">
+                        <img src="img/Gallery/temple.png"/>
                     </div>
                 </div>
             </section>
@@ -196,10 +179,59 @@
                 </div>
                 -->
             </section>
+
+            <section class="about-wrapper" id="about">
+                
+                <div data-aos="fade-left" data-aos-easing="ease-out">
+                    <h1>What I do</h1>
+                    <h2>I have my toes dipped in both the technical and creative aspects of the industries, the perfect fit for an indie developer if I would say so myself •̀.̫ •́✧</h2>
+                </div>
+                
+                <div class="about-container" data-aos="fade-right" data-aos-easing="ease-out">
+                    <div class="about-column">
+                        <img class="about-icon" src="img/DrawIcon.png" />
+                        <h1>Artist</h1>
+                        <p>I enjoy making pixel art, drawing illustrations and vector art</p>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Aseprite</li>
+                            <li>Krita</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="about-column">
+                        <img class="about-icon" src="img/CodeIcon.png" />
+                        <h1>Programmer</h1>
+                        <p>I like the dopamine rush of finishing a project</p>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="about-column">
+                        <img class="about-icon" src="img/GameDevIcon.png" />
+                        <h1>Game developer</h1>
+                        <p>I love coming up with concepts and designing playable demos</p>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Unity</li>
+                            <li>Aseprite</li>
+                            <li>Visual studio</li>
+                            <li>A lot of documentation reading</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer>
-            <div class="contact" data-aos="fade" data-aos-easing="ease-in">
+            <div class="contact" data-aos="fade" data-aos-easing="ease-in" id="contact">
                 <div class="contact-flex">
                     <div class="contact-column"><h1>Contact me</h1></div>
                     <div class="contact-column">Have a cool idea or a proposal that you want to share? Or if you want a commision done, either way message me through Instagram or email</div>
@@ -210,10 +242,8 @@
                     <form action="mailto:aquilainq@gmail.com" method="post" enctype="text/plain" style="margin: 5%;">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="firstname" placeholder="Your name.." />
-
                         <label for="subject">Message</label>
                         <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
-
                         <input type="submit" value="Send" />
                         <input type="submit" value="Reset" />
                     </form>
@@ -222,7 +252,6 @@
                 <script>
                 var coll = document.getElementsByClassName("contact-me");
                 var i;
-
                 for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");
@@ -238,7 +267,7 @@
                 -->
             </div>
         </footer>
-
+        <script src="flickity.pkgd.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
