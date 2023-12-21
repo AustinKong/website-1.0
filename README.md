@@ -14,6 +14,10 @@ This is a simple portfolio website build to display my projects. This is version
 * JavsScript: Frontend logic
 ## Getting Started
 ### Deployment
+<!--Download instructions for users for the program, not developers-->
+Download instructions for users:
+1. Clone the repository
+2. Open index.html
 ### Installation
 <!--Installation and setup instructions for developers-->
 Installation and setup instructions for developers:
